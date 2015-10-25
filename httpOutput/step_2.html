@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Pre-Installation</title>
+<base href="http://127.0.0.1/opencart/install/" />
+<script type="text/javascript" src="view/javascript/jquery/jquery-2.1.1.min.js"></script>
+<link href="view/javascript/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" />
+<script src="view/javascript/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<link href="view/javascript/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="view/stylesheet/stylesheet.css" />
+</head>
+<body><div class="container">
+  <header>
+    <div class="row">
+      <div class="col-sm-6">
+        <h1 class="pull-left">2<small>/4</small></h1>
+        <h3>Pre-Installation<br><small>Check your server is set-up correctly</small></h3>
+      </div>
+      <div class="col-sm-6">
+        <div id="logo" class="pull-right hidden-xs">
+          <img src="view/image/logo.png" alt="OpenCart" title="OpenCart" />
+        </div>
+      </div>
+    </div>
+  </header>
+    <div class="row">
+    <div class="col-sm-9">
+      <form action="http://127.0.0.1/opencart/install/index.php?route=step_2" method="post" enctype="multipart/form-data">
+        <p>1. Please configure your PHP settings to match requirements listed below.</p>
+        <fieldset>
+          <table class="table">
+            <thead>
+              <tr>
+                <td width="35%"><b>PHP Settings</b></td>
+                <td width="25%"><b>Current Settings</b></td>
+                <td width="25%"><b>Required Settings</b></td>
+                <td width="15%" class="text-center"><b>Status</b></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PHP Version</td>
+                <td>5.6.14</td>
+                <td>5.3+</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>Register Globals</td>
+                <td>                  Off                                  </td>
+                <td>Off</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>Magic Quotes GPC</td>
+                <td>                  Off                                  </td>
+                <td>Off</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>File Uploads</td>
+                <td>                  On                                  </td>
+                <td>On</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>Session Auto Start</td>
+                <td>                  Off                                  </td>
+                <td>Off</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <p>2. Please make sure the PHP extensions listed below are installed.</p>
+        <fieldset>
+          <table class="table">
+            <thead>
+              <tr>
+                <td width="35%"><b>Extension Settings</b></td>
+                <td width="25%"><b>Current Settings</b></td>
+                <td width="25%"><b>Required Settings</b></td>
+                <td width="15%" class="text-center"><b>Status</b></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Database</td>
+                <td>                  On                                  </td>
+                <td>On</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>GD</td>
+                <td>                  On                                  </td>
+                <td>On</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>cURL</td>
+                <td>                  On                                  </td>
+                <td>On</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>mCrypt</td>
+                <td>                  On                                  </td>
+                <td>On</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>ZLIB</td>
+                <td>                  On                                  </td>
+                <td>On</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>ZIP</td>
+                <td>                  On                                  </td>
+                <td>On</td>
+                <td class="text-center">                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
+                                  </td>
+              </tr>
+                          </tbody>
+          </table>
+        </fieldset>
+        <p>4. Please make sure you have set the correct permissions on the files list below.</p>
+        <fieldset>
+          <table class="table">
+            <thead>
+              <tr>
+                <td><b>Files</b></td>
+                <td><b>Status</b></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/config.php</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/admin/config.php</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <p>5. Please make sure you have set the correct permissions on the directories list below.</p>
+        <fieldset>
+          <table class="table">
+            <thead>
+              <tr>
+                <td align="left"><b>Directories</b></td>
+                <td align="left"><b>Status</b></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/image/</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/image/cache/</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/image/catalog/</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/system//storage/cache/</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/system/storage/logs/</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/system/storage/download/</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/system/storage/upload/</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+              <tr>
+                <td>C:/xampp/apps/opencart/htdocs/system/storage/modification/</td>
+                <td>                  <span class="text-success">Writable</span>
+                                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <div class="buttons">
+          <div class="pull-left"><a href="http://127.0.0.1/opencart/install/index.php?route=step_1" class="btn btn-default">Back</a></div>
+          <div class="pull-right">
+            <input type="submit" value="Continue" class="btn btn-primary" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-3">
+      <ul class="list-group">
+        <li class="list-group-item">License</li>
+        <li class="list-group-item"><b>Pre-Installation</b></li>
+        <li class="list-group-item">Configuration</li>
+        <li class="list-group-item">Finished</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container"><a href="http://www.opencart.com" target="_blank">Project Homepage</a>|<a href="http://www.opencart.com/index.php?route=documentation/introduction" target="_blank">Documentation</a>|<a href="http://forum.opencart.com" target="_blank">Support Forums</a><br />
+    </div>
+</footer>
+</body></html>
