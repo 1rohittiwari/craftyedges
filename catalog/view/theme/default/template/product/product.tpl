@@ -136,11 +136,12 @@
           </ul>
           <?php if ($price) { ?>
           <ul class="list-unstyled">
-            <?php if (!$special) { ?>
+            <?php $offerPrice; ?>
+            <?php if (!$special) { $offerPrice = explode(" ", $price); ?>
             <li>
               <h2><?php echo $price; ?></h2>
             </li>
-            <?php } else { ?>
+            <?php } else { $offerPrice = explode(" ", $special); ?>
             <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
             <li>
               <h2><?php echo $special; ?></h2>
@@ -545,6 +546,37 @@ $('button[id^=\'button-upload\']').on('click', function() {
 	}, 500);
 });
 //--></script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "<?php echo $heading_title; ?>",
+  "image": "<?php echo $image['popup']; ?>",
+  "description": "<?php echo strip_tags($description); ?>",
+  "sku": "<?php echo $model; ?>",
+  "brand": {
+    "@type": "Thing",
+    "name": "<?php echo $manufacturer; ?>"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "<?php echo $rating; ?>",
+    "reviewCount": "<?php echo $reviews[0]; ?>"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "<?php echo $offerPrice[0]; ?>",
+    "priceValidUntil": "2020-11-05",
+    "itemCondition": "http://schema.org/NewCondition",
+    "availability": "http://schema.org/<?php echo str_replace(' ', '', $stock); ?>",
+    "seller": {
+      "@type": "Organization",
+      "name": "<?php echo $manufacturer; ?>"
+    }
+  }
+}
+</script>
 <script type="text/javascript"><!--
 $('#review').delegate('.pagination a', 'click', function(e) {
     e.preventDefault();

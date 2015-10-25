@@ -2,3 +2,5 @@
 2015-10-25 15:49:51 - PHP Notice:  Undefined index: sort_order in C:\xampp\apps\opencart\htdocs\admin\model\design\banner.php on line 37
 2015-10-25 15:49:51 - PHP Notice:  Undefined index: sort_order in C:\xampp\apps\opencart\htdocs\admin\model\design\banner.php on line 37
 2015-10-25 15:49:51 - PHP Notice:  Undefined index: sort_order in C:\xampp\apps\opencart\htdocs\admin\model\design\banner.php on line 37
+2015-10-25 16:44:39 - PHP Warning:  str_replace() expects at least 3 parameters, 2 given in C:\xampp\apps\opencart\htdocs\catalog\view\theme\default\template\product\product.tpl on line 571
+2015-10-25 16:51:30 - PHP Notice:  Undefined variable: product in C:\xampp\apps\opencart\htdocs\catalog\view\theme\default\template\product\product.tpl on line 552
