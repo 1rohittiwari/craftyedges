@@ -1,5 +1,4 @@
-<link rel="stylesheet/less" type="text/css" href=".\catalog\view\theme\default\stylesheet\style.less" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+<link rel="stylesheet/less" type="text/css" href="./catalog/view/theme/default/stylesheet/style.less" />
 <div class="hero-wrapper">
   <div class="hero" class="navbar-shop">
     <div class="hero-images">
@@ -16,6 +15,4 @@
     </div>
   </div>
 </div>
-<style>
-
-</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
